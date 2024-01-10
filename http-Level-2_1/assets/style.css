@@ -1,0 +1,55 @@
+/* ====================================================================
+                                RESET
+=====================================================================*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+
+body {
+    background-color: rgb(113, 113, 113);
+    height: 95vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+body nav {
+    text-align: center;
+    background: transparent;
+    backdrop-filter: blur(12px) brightness(140%);
+    padding: 0.5% 0;
+    margin-top: 3%;
+}
+
+body nav ul {
+    display: flex;
+    list-style-type: none;
+    width: 40%;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.719);
+    font-size: 1.8rem;
+
+}
+
+h1 {
+    margin-top: 10%;
+    font-size: 3rem;
+    text-shadow: 0 0 2px white;
+}
