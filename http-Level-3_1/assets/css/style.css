@@ -1,0 +1,545 @@
+/* ====================================================================
+                                RESET
+=====================================================================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+@font-face {
+  font-family: Nunito;
+  src: url(/nunito);
+}
+body {
+  font-family: Nunito;
+  background: url(/images/homeorange.png) center/cover no-repeat orange;
+}
+body header nav {
+  padding: 2% 4%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body header nav div {
+  display: flex;
+  gap: 3%;
+  align-items: center;
+}
+body header nav div img {
+  width: 32px;
+  aspect-ratio: 1/1;
+}
+body header nav div h2 {
+  font-size: 2rem;
+  letter-spacing: 5px;
+}
+body header nav ul {
+  width: 70%;
+  display: flex;
+  list-style-type: none;
+  gap: 6%;
+  margin: 0 auto;
+  padding-left: 9%;
+  font-size: 1.1rem;
+}
+body header nav .button {
+  background-color: #f9bdbd;
+  padding: 1% 2%;
+  border-radius: 0.5rem;
+  border: 1px solid gray;
+}
+body .home {
+  margin: 5%;
+}
+body .home section {
+  background: url("/images/pink.png") right/contain no-repeat, url("/images/background.png") center/cover no-repeat;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 3rem rgba(0, 0, 0, 0.487);
+}
+body .home section main {
+  height: 85vh;
+  background: url("/images/logobg.png") 70% 90%/30% no-repeat;
+  display: flex;
+  justify-content: space-evenly;
+}
+body .home section main article {
+  padding: 4% 5%;
+  width: 50%;
+}
+body .home section main h2 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  padding-block: 1rem;
+}
+body .home section main h2 span {
+  font-weight: 600;
+}
+body .home section main h3 {
+  font-size: 6rem;
+}
+body .home section main a {
+  display: inline-block;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  background-color: #daa520;
+  padding: 3% 2%;
+  border-radius: 0.2rem;
+}
+body .about {
+  background: url("/images/background.png") center/cover no-repeat;
+}
+body .about main {
+  padding: 5%;
+}
+body .about main section {
+  margin-bottom: 15%;
+  padding-top: 5%;
+}
+body .about main section div {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+body .about main section div p {
+  transform: translate(0, 25%);
+  padding-inline: 1%;
+}
+body .about main section div img {
+  margin-right: 0.3rem;
+  width: 2rem;
+  height: 2rem;
+}
+body .about main section div h2 {
+  font-size: 2rem;
+}
+body .about main section div h1 {
+  font-size: 6rem;
+  color: rgba(34, 34, 34, 0.1019607843);
+}
+body .about main section article {
+  height: 60vh;
+  padding-block: 5%;
+  background: url("/images/aboutbg.png") left/contain no-repeat;
+  display: flex;
+  margin-top: 3%;
+}
+body .about main section article div {
+  width: 50%;
+  padding-top: 3%;
+  padding-left: 3%;
+  display: block;
+}
+body .about main section article div img {
+  width: 70%;
+  height: auto;
+}
+body .about main section article div img:nth-of-type(2) {
+  transform: translate(-48%, -30%);
+}
+body .about main section article div h2 {
+  margin-top: 3%;
+  font-size: 3rem;
+  width: 95%;
+  text-align: left;
+}
+body .about main section article div h2 span {
+  font-weight: 200;
+}
+body .about main section article div h3 {
+  margin-top: 3rem;
+  font-size: 2rem;
+  font-weight: 400;
+  width: 95%;
+}
+body .about main section article:nth-of-type(2) {
+  background: none;
+}
+body .about main section article:nth-of-type(2) div {
+  width: 70%;
+}
+body .about main section article:nth-of-type(2) div h2 {
+  font-size: 2.8rem;
+}
+body .about main section article:nth-of-type(2) div h3 {
+  font-size: 1.8rem;
+  margin-top: 1.5rem;
+}
+body .about main section article:nth-of-type(2) div:nth-of-type(2) {
+  width: 30%;
+  padding: 0;
+}
+body .about main section article:nth-of-type(2) div:nth-of-type(2) img {
+  width: 90%;
+  transform: translate(33%, -10%);
+}
+body .howItWorks {
+  background: url("/images/background.png") center/cover no-repeat;
+}
+body .howItWorks main {
+  padding-block: 5% 10%;
+  width: 100%;
+}
+body .howItWorks main .subscribe {
+  padding-left: 5%;
+}
+body .howItWorks main section {
+  padding-top: 7.5%;
+  padding-inline: 4%;
+}
+body .howItWorks main section div {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+body .howItWorks main section div p {
+  transform: translate(0, 25%);
+  padding-inline: 1%;
+}
+body .howItWorks main section div img {
+  margin-right: 0.3rem;
+  width: 2rem;
+  height: 2rem;
+}
+body .howItWorks main section div h2 {
+  font-size: 2rem;
+}
+body .howItWorks main section div h1 {
+  font-size: 6rem;
+  color: rgba(34, 34, 34, 0.1019607843);
+}
+body .howItWorks main section article {
+  display: flex;
+  justify-content: space-between;
+  padding-block: 5%;
+}
+body .howItWorks main section article div {
+  display: block;
+}
+body .howItWorks main section article div div {
+  display: flex;
+}
+body .howItWorks main section article div div h2 {
+  font-size: 10rem;
+  color: rgba(249, 189, 189, 0.3725490196);
+  line-height: 100%;
+}
+body .howItWorks main section article div div img {
+  width: 10vw;
+  height: 10vw;
+  transform: translate(-25%, -14%);
+}
+body .howItWorks main section article div h5 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+body .howItWorks main a {
+  text-align: center;
+  display: block;
+  padding: 1% 3%;
+  width: 20%;
+  background-color: #daa520;
+  color: white;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  margin: 5% auto;
+}
+body .categories {
+  background: url("/images/background.png") center/cover no-repeat;
+}
+body .categories main {
+  padding-block: 5% 10%;
+  width: 100%;
+}
+body .categories main .subscribe {
+  padding-left: 5%;
+}
+body .categories main section {
+  padding-top: 7.5%;
+  padding-inline: 1%;
+}
+body .categories main section div {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+body .categories main section div p {
+  transform: translate(0, 25%);
+  padding-inline: 1%;
+}
+body .categories main section div img {
+  margin-right: 0.3rem;
+  width: 2rem;
+  height: 2rem;
+}
+body .categories main section div h2 {
+  font-size: 2rem;
+}
+body .categories main section div h1 {
+  font-size: 6rem;
+  color: rgba(34, 34, 34, 0.1019607843);
+}
+body .categories main section section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  padding-inline: 5%;
+}
+body .categories main section section article {
+  width: 80%;
+  padding-block: 2.5%;
+  border-radius: 0% 25%;
+  padding-right: 5%;
+  margin-bottom: 20%;
+  height: 88%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body .categories main section section article img {
+  margin: 0 auto;
+}
+body .categories main section section article h3 {
+  padding: 10%;
+}
+body .categories main section section article a {
+  display: block;
+  margin-top: 15%;
+  margin-left: auto;
+  width: 40%;
+  border: 1px solid black;
+  text-align: center;
+  padding: 2.5%;
+  border-radius: 0.5rem;
+}
+body .categories main section section article:nth-of-type(1) {
+  background-color: #f9bdbd;
+}
+body .categories main section section article:nth-of-type(1) img {
+  margin: 0;
+}
+body .categories main section section article:nth-of-type(4) {
+  background-color: #f9bdbd;
+}
+body .categories main section section article:nth-of-type(2), body .categories main section section article:nth-of-type(5) {
+  background-color: #f7dea6;
+}
+body .categories main section section article:nth-of-type(2) img, body .categories main section section article:nth-of-type(5) img {
+  margin: 0 auto;
+}
+body .categories main section section article:nth-of-type(3) {
+  background-color: #a8dcec;
+}
+
+footer {
+  background: url("/images/footerbg.png") right bottom/48% no-repeat;
+  padding-inline: 5%;
+}
+footer section {
+  display: flex;
+  justify-content: space-between;
+  gap: 3%;
+  width: 70%;
+  border-top: 1px solid gray;
+  padding-bottom: 5%;
+  padding-top: 1.5%;
+}
+footer section div {
+  padding-bottom: 0;
+  text-align: left;
+}
+footer section div div {
+  display: flex;
+  margin-bottom: 5%;
+}
+footer section div h4 {
+  margin-bottom: 10%;
+  font-size: 1rem;
+  font-weight: 200;
+}
+footer section div p {
+  margin-bottom: 20%;
+  font-weight: 800;
+  line-height: 180%;
+}
+footer section div a {
+  margin-bottom: 20%;
+  display: block;
+  font-weight: 200;
+}
+footer div {
+  text-align: center;
+  padding-bottom: 1.5%;
+  font-weight: 200;
+}
+
+.subscribe {
+  display: flex;
+  padding-block: 2.5%;
+  margin-block: 5%;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-inline: 5%;
+}
+.subscribe h3 {
+  width: 50%;
+  font-weight: 400;
+}
+.subscribe h3 span {
+  font-weight: 800;
+}
+.subscribe form {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+.subscribe form label {
+  width: 100%;
+  padding-left: 10%;
+}
+.subscribe form label input {
+  font-size: 1rem;
+  width: 60%;
+  padding: 3% 1%;
+  border: 1px solid #daa520;
+  line-height: 100%;
+  border-radius: 0.5rem;
+}
+.subscribe form label input:focus {
+  outline: none;
+}
+.subscribe form label button {
+  padding: 3% 1%;
+  width: 30%;
+  background-color: #daa520;
+  border: none;
+  line-height: 128%;
+  transform: translate(-10%);
+  color: white;
+  font-size: 1rem;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.testimony {
+  background: url("/images/background.png") center/cover no-repeat;
+}
+.testimony main {
+  padding-block: 5% 10%;
+  width: 100%;
+}
+.testimony main .subscribe {
+  padding-left: 5%;
+}
+.testimony main section {
+  padding-top: 7.5%;
+  padding-inline: 4%;
+}
+.testimony main section div {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.testimony main section div p {
+  transform: translate(0, 25%);
+  padding-inline: 1%;
+}
+.testimony main section div img {
+  margin-right: 0.3rem;
+  width: 2rem;
+  height: 2rem;
+}
+.testimony main section div h2 {
+  font-size: 2rem;
+}
+.testimony main section div h1 {
+  font-size: 6rem;
+  color: rgba(34, 34, 34, 0.1019607843);
+}
+.testimony main section .slider {
+  width: 100%;
+  display: flex;
+  gap: 3rem;
+}
+.testimony main section .slider article {
+  background: url(/images/apartment.jpeg) center/cover no-repeat;
+  border-radius: 30% 0%;
+  width: 300px;
+  aspect-ratio: 8/11;
+}
+.testimony main section .slider article:nth-of-type(2) {
+  background-image: url(/images/cactus.jpeg);
+}
+.testimony main section .slider .userWrapper {
+  width: 500px;
+  padding-inline: 3%;
+  height: 100%;
+}
+.testimony main section .slider .userWrapper .comment {
+  border-radius: 0 20%;
+  border: 2px solid rgb(77, 162, 241);
+  padding: 10% 2.5%;
+}
+.testimony main section .slider .userWrapper .comment img {
+  width: 30%;
+  height: auto;
+  mix-blend-mode: multiply;
+}
+.testimony main section .slider .userWrapper .comment .user {
+  margin-top: 15%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0;
+  width: 70%;
+  height: 100%;
+}
+.testimony main section .slider .userWrapper .comment .user img {
+  border-radius: 50%;
+  margin-top: 5%;
+  width: 3rem;
+  height: 3rem;
+}
+.testimony main section .slider .userWrapper .comment .user div {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  width: 80%;
+  align-items: flex-start;
+}
+.testimony main section .slider .userWrapper .comment .user div p {
+  display: block;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.control {
+  display: flex;
+  width: 450px;
+  justify-content: space-between;
+  margin-left: auto;
+  transform: translate(-22%, -20vh);
+}
+.control p span {
+  color: rgb(148, 148, 148);
+}
+
+.orang {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-inline: 7%;
+  transform: translate(-2%, -15vh);
+}
+
+/*# sourceMappingURL=style.css.map */
